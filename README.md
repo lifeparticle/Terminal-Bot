@@ -17,3 +17,10 @@ echo \# 16. Math 		> Math.md
 echo \# 17. Physics 		> Physics.md
 echo \# 18. ASCII Table 		> ASCII\ Table.md
 ```
+
+
+```
+for i in {15..50}; do
+  mkdir "$i. "
+done
+```
