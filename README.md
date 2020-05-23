@@ -18,7 +18,6 @@ echo \# 18. ASCII Table             > ASCII\ Table.md
 ```
 
 
-
 ```bash
 for i in {15..50}; do
   mkdir "$i. "
@@ -26,3 +25,10 @@ done
 ```
 
 
+declare -a array=("Number Generation" "Fibonacci Series" "Combinatorics" "Algorithm" "Number Theory" "Numerical Methods" "Basics of Numbers" "Java" "Computational Geometry" "Math" "Physics" "ASCII Table")
+
+
+for ((i=1; i<${#array[@]}+1; ++i));
+do
+  echo "# $i. ${array[$i]}" > ${array[$i]}.md
+done
