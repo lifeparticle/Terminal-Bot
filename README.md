@@ -27,7 +27,6 @@ done
 ```bash
 declare -a array=("Number Generation" "Fibonacci Series" "Combinatorics" "Algorithm" "Number Theory" "Numerical Methods" "Basics of Numbers" "Java" "Computational Geometry" "Math" "Physics" "ASCII Table")
 
-
 for ((i=1; i<${#array[@]}+1; ++i));
 do
   echo "# $i. ${array[$i]}" > ${array[$i]}.md
